@@ -994,16 +994,10 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 
-/* .about_section .detail-box .sub-heading{
-  border-left: 8px solid #fff; 
-  padding-top: 5px; 
-  padding-bottom: 5px;
-  padding-right: 12px;
-} */
+
 .about_section .detail-box h2{
   color: #fff;
-
-  border-left: 8px solid #fff; 
+  /* border-left: 8px solid #fff;  */
   padding-top: 5px; 
   padding-bottom: 5px;
   padding-right: 12px;
@@ -2511,4 +2505,11 @@ input.check-toggle-round-flat:checked + label:after {
   top: 0; left: 0; bottom: 0; right: 0;
   width: 100%;
   height: 100%; border: none; border-radius: 5px;
+}
+
+.sub-heading{
+  border-left: 8px solid #fff; 
+  padding-top: 25px; 
+  padding-bottom: 25px;
+  padding-right: 12px;
 }
