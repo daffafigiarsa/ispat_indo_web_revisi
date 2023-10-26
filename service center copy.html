@@ -23,6 +23,7 @@
 
   <!-- font awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
   <!-- nice select -->
  
 
@@ -37,20 +38,21 @@
   <div class="">
     <!-- header section strats -->
     
-    <header class="header_section">
+    <header class="">
       <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container fixed-top navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="index.html">
-            <img src="../hirevac-html/images/logo-ispat.png" alt="Logo"/>
-            <span>
-              ISPAT INDO
-            </span>
-          </a>
+        <nav class="navbar navbar-expand-lg custom_nav-container fixed-top navbar navbar-expand-lg navbar-dark bg-light">
+          <div class="logo-container">
+            <div class="logo-wrap local-scroll">
+              <a href="index.html">
+                <img class="logo" src="images/logoispat.png" alt="logo" data-rjs="2" style="width: 70px; height: 50px; position: relative; bottom: 5px;">
+              </a>
+            </div>
+        </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ml-auto">
+            <ul class="navbar-nav  ml-left">
               <li class="nav-item">
                 <div class="dropdown">
                 <a class="nav-link dropdown-toggle" type="button" data-toggle="dropdown" >Company</a>
@@ -101,29 +103,28 @@
               <a class="nav-link dropdown-toggle" type="button" data-toggle="dropdown" >Subsidiaries</a>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="#">PT Ispat Wire Product</a>
-                <a class="dropdown-item" href="#">PT Ispat Panca Putera</a>
                 <a class="dropdown-item" href="#">PT Ispat Bukit Baja</a>
               </div>
               </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <span>
-                  News
-                </span>
+                  Ispat Now
               </a>
             </li> 
+            </ul>
+
+            <ul class="navbar-nav  ml-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <span>  
+                  <i class="fa fa-solid fa-suitcase" style="max-width: 1rem;"></i>
                     Careers
-                  </span>
                 </a>
               </li>
               <li class="nav-item">
                 <div class="dropdown">
                   <a class="nav-link dropdown-toggle" type="button" data-toggle="dropdown">
-                    <img src="images/logo/Web.png" alt="logo" style="max-width: 2rem; position: relative; bottom: 7px; left: 0px;">
+                    <i class="fa fa-solid fa-globe"></i>
                     EN
                   </a>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -132,19 +133,20 @@
                   </div>
                   </div>
               </li>
-              <!-- <li class="nav-item">
-                <div class="switch">
-                    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
-                    <label for="language-toggle"></label>
-                    <span class="on">EN</span>
-                    <span class="off">ID</span>
+              <div style="border-left: 1.5px solid #252525; padding-top: 40px;"></div>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a class="nav-link " href="">
+                    Contact us 
+                  </a>
                 </div>
-              </li>   -->
+              </li>
             </ul>
+
           </div>
         </nav>
       </div>
-    </header>  
+    </header>   
     <!-- end header section -->
 
 
@@ -158,13 +160,112 @@
 
 <section class="cs_section layout_padding">
   <div class="container">
-    <div class="row">
-      <div class="col">
+    <div class="row" style="background-color: #fff; border-radius: 10px; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 8px 0 rgba(0, 0, 0, 0.1);">
+      <div class="col-md-12 row">
+
+        <div class="contact col-md-4">
+          <div class="">
+            <br>
+            <h2 style="color: #fff;">Contact Details</h2>
+            <P style="color: #fff; font-size: 14px;">We' love to hear from you. Our friendly team is always here to chat.</P>
+
+            <br>
+            <div class="detail-info">
+              <div class="col">
+                <div class="row">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <h5>
+                    Office
+                  </h5>
+                </div>
+                <p>Desa Kedungturi, Taman Sidoarjo PO BOX 1083 Surabaya 60010 - Indonesia</p>
+              </div>
+            </div>
+            <br>
+
+            <div class="detail-info">
+              <div class="col">
+                <div class="row">
+                  <i class="fa-solid fa-clock"></i>
+                  <h5>
+                    Open hours
+                  </h5>
+                </div>
+                <p>Monday - Friday <br>9.00 - 18.00 WIB</p>
+              </div>
+            </div>
+            <br>
+
+            <div class="detail-info">
+              <div class="col">
+                <div class="row">
+                  <i class="fa-solid fa-envelope"></i>
+                  <h5>
+                    Email to us
+                  </h5>
+                </div>
+                <p>Sales & Marketing : <br> <a href="">marketing.indo@mittalsteel.com</a> <br> <br>
+
+                  Customer Support : <br> <a href="">custsupp.indo@mittalsteel.com</a> <br> <br>
+
+                  Career : <br> <a href="">hrd.indo@mittalsteel.com</a> <br> <br>
+
+                  Webmaster : <br> <a href="">webmaster.indo@mittalsteel.com</a></p>
+              </div>
+            </div>
+            <br>
+            
+            <div class="detail-info">
+              <div class="col">
+                <div class="row">
+                  <i class="fa-solid fa-phone"></i>
+                  <h5>
+                    Call us
+                  </h5>
+                </div>
+                <p>TELP : (62) 31-7887000 <br> <br>
+                  FAX : (62) 31-7887500 (031) <br> <br>
+                  Sales & Marketing(WA) : <br> <a href="">+62 81 5515 2222</a></p>
+              </div>
+            </div>
+            <br>
+            <br> <br> <br>
+
+            <div class="social">
+              <div class="col">
+                
+                  <a href="">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa-brands fa-tiktok"></i>
+                  </a>
+
+              </div>
+            </div>
+            <br>
+
+          </div>
+        </div>
        
 
-        <div class="col-12">
+
+        <div class="col-md-8">
           <br>
-          <h2 class="hider-font">Customer Center</h2>
+          <h2 class="hider-font">Get In Touch</h2>
+          <p>24/7 We Will answer your question and problem</p>
           <br>
           <form>
             <div class="form-row">
@@ -583,13 +684,15 @@
                 </label>
               </div>
             </div>
-            <button class="btn btn-primary" type="submit">Submit form</button>
+            <div class="button-submit-from">
+              <button type="submit">Submit form</button>
+            </div>
           </form>
-          <br>
       </div>
-
+      
       </div>
     </div>
+
   </div>
 </section>
 
@@ -632,82 +735,125 @@
   <section class="info_section ">
     <div class="container">
       <div class="row">
+        <div class="col-md-5">
+            <img src="images/logo-ispat.png" style="max-width: 3em; padding-bottom: 10px;">
+            <H4>PT. Ispat Indo</H4>
+            <p>
+              Indonesia's Leading Steel <br> Manufacturing With 3 <br> Subsidiaries And An Array Of 8 <br> Exceptional Products.
+            </p>
+        </div>
         <div class="col-md-2 info_links">
-          <h4>
-            Menu
-          </h4>
+          <h5 style="font-weight: bold;
+          font-size: 18px;
+          margin-bottom: 20px;
+          color: #ccc;">
+            Mail To
+          </h5>
           <ul>
-            <li class="active">
+            <li style="margin-bottom: 5px;">
               <a href="index.html">
-                Home
+                Ispat Indo
               </a>
             </li>
-            <li>
+            <li style="margin-bottom: 5px;">
               <a href="about.html">
-                About
+                Sales & Marketing
               </a>
             </li>
-            <li>
-              <a class="" href="job.html">
-                Jobs
-              </a>
-            </li>
-            <li>
-              <a class="" href="freelancer.html">
-                Freelancers 
+            <li style="margin-bottom: 5px;">
+              <a class="" href="careers.html">
+                CS Team
               </a>
             </li>
           </ul>
         </div>
-        <div class="col-md-3">
-          <h4>
-            Jobs
-          </h4>
-          <p>
-            Established fact that a reader will be distracted by the readable content of a page when looking at its
-            layout. The point of using Lorem Ipsum
-          </p>
+
+        <div class="col-md-2 info_links">
+          <h5 style="color: transparent;">
+            .
+          </h5>
+          <ul>
+            
+            <li style="margin-bottom: 5px;">
+              <a class="" href="freelancer.html">
+                Careers 
+              </a>
+            </li>
+            <li style="margin-bottom: 5px;">
+              <a class="" href="freelancer.html">
+                web master
+              </a>
+            </li>
+            <li style="margin-bottom: 5px;">
+              <a class="" href="freelancer.html">
+                Whatsapp 
+              </a>
+            </li>
+          </ul>
         </div>
+
         <div class="col-md-3">
           <div class="info_social">
-            <h4>
-              Social Link
-            </h4>
+            <h5 style="font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #ccc;">
+              Social Media
+            </h5>
             <div class="social_container">
-              <div>
-                <a href="">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-              </div>
-              <div>
-                <a href="">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-              </div>
-              <div>
-                <a href="">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-              </div>
-              <div>
-                <a href="">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
+              
+                <div>
+                  <a href="">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </div>
+                <div>
+                  <a href="">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </div>
+                <div>
+                  <a href="">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </div>
+           
+                <div>
+                  <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+                <div>
+                  <a href="">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </div>
+                <div>
+                  <a href="">
+                    <i class="fa-brands fa-tiktok"></i>
+                  </a>
+                </div>
+            </div>
+            <br>
+            <Div class="info_links">
+
+              <div class="row">
+              <div class="col">
+                <ul>
+                  <li style="margin-bottom: 5px;">
+                    <a href="">term of service</a>
+                  </li>
+                  <li style="margin-bottom: 5px;">
+                    <a href="">privacy policy</a>
+                  </li>
+                  <li style="margin-bottom: 5px;">
+                    <a href="">Cookies</a>
+                  </li>
+                </ul>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="info_form">
-            <h4>
-              Newsletter
-            </h4>
-            <form action="">
-              <input type="text" placeholder="Enter Your Email" />
-              <button type="submit">
-                Subscribe
-              </button>
-            </form>
+
+            </Div>
           </div>
         </div>
       </div>
@@ -716,18 +862,11 @@
   <!-- end info_section -->
 
 
-
-
-
-
-  
-
   <!-- footer section -->
   <footer class="footer_section">
     <div class="container">
       <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
+        &copy; <span id="displayYear"></span> All Rights Reserved By PT. Ispat Indo</a>
       </p>
     </div>
   </footer>
