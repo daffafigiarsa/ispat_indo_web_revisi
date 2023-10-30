@@ -1034,11 +1034,7 @@ input.check-toggle-round-flat:checked + label:after {
   }
 }
 
-/* @media screen and (max-width: 480px) {
-  #home-carousel  [class*="col-"] {
-    width: 100%;
-  }
-} */
+
 
 
 .about_section .detail-box .sub-heading{
@@ -2172,13 +2168,13 @@ input.check-toggle-round-flat:checked + label:after {
 
 .container_CS img{
   width: 100%;
-  border: none ;
 
 }
 
 
 #sidebar img{
-  min-height: 550px;
+  min-height: 515px;
+  width: 100%;
   position: relative;
   display: -webkit-box;
   display: -moz-box;
@@ -2195,13 +2191,35 @@ input.check-toggle-round-flat:checked + label:after {
   background-repeat: no-repeat;
   background-position: top;
 }
+@media only screen and (max-width: 1050px) {
+  #sidebar img{
+    margin-bottom: -80px;
+    min-height: 615px;
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex; 
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;                     
+    background-image:  url(../images/contactus.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+}
 
 
 
 #sidebar a {
   position: relative;
   right: 16px;
-  bottom: 91px;
+  bottom: 80px;
   padding: 20px 45px;
   background: #3F58DD;
   font-size: 15px;
@@ -2210,6 +2228,21 @@ input.check-toggle-round-flat:checked + label:after {
   border-color: transparent;
   width: 100%;
   border: 1px solid #3F58DD;
+}
+@media only screen and (max-width: 1050px) {
+  #sidebar a {
+    position: relative;
+    right: 16px;
+    bottom: 0px;
+    padding: 20px 45px;
+    background: #3F58DD;
+    font-size: 15px;
+    transition: all .3s; 
+    color: white;
+    border-color: transparent;
+    width: 100%;
+    border: 1px solid #3F58DD;
+  }
 }
 /* @media only screen and (max-width: 1190px) {
   #sidebar a {
