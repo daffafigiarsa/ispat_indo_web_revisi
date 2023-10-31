@@ -3023,7 +3023,7 @@ input.check-toggle-round-flat:checked + label:after {
 }
 .stat-item-icon {
   float: left;
-  background-color: #ed5f5e;
+  background-color: #3F58DD;
   color: #fff;
   width: 44px;
   height: 44px;
@@ -3032,9 +3032,16 @@ input.check-toggle-round-flat:checked + label:after {
   line-height: 42px;
   margin-right: 18px;
 }
+.stat-item-icon i{
+  color: #fff;
+  text-align: center;
+  font-size: 28px;
+  position: relative;
+  top: 10px;
+}
 .stat-item-number {
   float: left;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 30px;
   margin-right: 18px;
   line-height: 42px;
@@ -3054,10 +3061,11 @@ input.check-toggle-round-flat:checked + label:after {
   float: none;
   margin: 0 auto;
   padding-bottom: 20px;
-  background: transparent;
-  border: 1px solid #fff;
-  width: 36px;
-  height: 36px;
+  background-color: #3F58DD;
+  border-radius: 2px;
+  /* border: 1px solid #fff; */
+  width: 49px;
+  height: 49px;
   font-size: 18px;
   line-height: 36px;
   -webkit-transition: all 0.3s ease-in-out;
