@@ -2794,7 +2794,7 @@ input.check-toggle-round-flat:checked + label:after {
 /*--------------------------------------------------
     09. Services Section
 ---------------------------------------------------*/
-.service {
+/* .service {
   background-color: #f7f7f7;
   padding: 40px 30px 30px;
   -webkit-transition: all 0.3s ease-in-out;
@@ -2846,7 +2846,7 @@ input.check-toggle-round-flat:checked + label:after {
 .service.service-type-2:hover .service-header .service-icon {
   background: #3F58DD;
   color: #fff;
-}
+} */
 
 
 /*--------------------------------------------------
@@ -2961,4 +2961,85 @@ input.check-toggle-round-flat:checked + label:after {
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+
+/* Services Section - Home Page
+------------------------------*/
+.services .service-item {
+  position: relative;
+  padding-top: 40px;
+}
+
+.services .service-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #252525;
+  opacity: 0.5;
+}
+
+.services .service-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: #3F58DD;
+  border-right: 5px solid #fff;
+}
+
+.services .service-item .icon {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  margin-right: 50px;
+  line-height: 0;
+}
+
+.services .service-item .icon i {
+  color: #252525;
+  opacity: 0.8;
+  font-size: 56px;
+  transition: ease-in-out 0.3s;
+  z-index: 2;
+  position: relative;
+}
+
+.services .service-item .icon:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  background: #3F58DD;
+  opacity: 0.3;
+  border-radius: 50px;
+  z-index: 1;
+  bottom: -15px;
+  right: -15px;
+  transition: 0.3s;
+}
+
+.services .service-item .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services .service-item .title a {
+  color: #3F58DD;
+}
+
+.services .service-item .title a:hover {
+  color: #1a1c78;
+}
+
+.services .service-item .description {
+  line-height: 24px;
+  font-size: 14px;
 }
