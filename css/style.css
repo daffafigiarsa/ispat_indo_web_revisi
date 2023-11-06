@@ -243,16 +243,46 @@ a:focus {
 
 }
 
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
   .custom_nav-container {
     padding: 0 155px ;
   }
+} */
+@media screen and (min-width: 1269px) {
+  .custom_nav-container {
+    padding: 0 120px ;
+  }
 }
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1268px) {
   .custom_nav-container {
     padding: 0 10px;
   }
 }
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+}
+
+.dropdown-menu li {
+  position: relative;
+  }
+  .dropdown-menu .dropdown-submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: -7px;
+  }
+  .dropdown-menu .dropdown-submenu-left {
+  right: 100%;
+  left: auto;
+  }
+  .dropdown-menu > li:hover > .dropdown-submenu {
+  display: block;
+  }
 
 .custom_nav-container .navbar-nav {
   -webkit-box-align: center;
@@ -2885,7 +2915,7 @@ input.check-toggle-round-flat:checked + label:after {
 
 .contact .info-item {
   background: #f7f7f7;
-  padding: 30px;
+  padding: 25px 20px;
   margin-bottom: 25px;
   height: 225px;
 }
@@ -2905,10 +2935,19 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 .contact .info-item p {
-  padding: 0;
   line-height: 24px;
   font-size: 14px;
-  margin-bottom: 0;
+}
+
+.contact .info-item .email p {
+  line-height: 24px;
+  font-size: 14px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .contact .info-item .email p{ 
+    line-height: 14px;
+    font-size: 11px;
+  }
 }
 
 .contact .php-email-form {
