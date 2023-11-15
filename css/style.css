@@ -3085,7 +3085,8 @@ input.check-toggle-round-flat:checked + label:after {
 
 .pop-up {
       position: fixed;
-      right: 9%;
+      /* right: 9%; */
+      right: 123px;
       top: 11%;
       background: #3F58DD;
       border-radius: 2px;
@@ -3110,7 +3111,8 @@ input.check-toggle-round-flat:checked + label:after {
 .pop-up .triangle-up {
   position: fixed;
   top: 7%;
-  right: 11.5%;
+  /* right: 11.5%; */
+  right: 160px;
 	width: 0;
 	height: 0;
 	border-left: 15px solid transparent;
