@@ -3087,7 +3087,8 @@ input.check-toggle-round-flat:checked + label:after {
       position: fixed;
       /* right: 9%; */
       right: 123px;
-      top: 11%;
+      /* top: 11%; */
+      top: 81px;
       background: #3F58DD;
       border-radius: 2px;
       padding: 15px;
@@ -3099,7 +3100,7 @@ input.check-toggle-round-flat:checked + label:after {
     .pop-up {
       position: fixed;
       right: 1%;
-      top: 11%;
+      top: 81px;
       background: #3F58DD;
       border-radius: 2px;
       padding: 15px;
@@ -3110,7 +3111,8 @@ input.check-toggle-round-flat:checked + label:after {
 
 .pop-up .triangle-up {
   position: fixed;
-  top: 7%;
+  /* top: 7%; */
+  top: 51px;
   /* right: 11.5%; */
   right: 160px;
 	width: 0;
@@ -3122,8 +3124,8 @@ input.check-toggle-round-flat:checked + label:after {
 @media only screen and (max-width: 1268px) {
   .pop-up .triangle-up {
     position: fixed;
-    top: 7%;
-    right: 4%;
+    top: 51px;
+    right: 40px;
     width: 0;
     height: 0;
     border-left: 15px solid transparent;
