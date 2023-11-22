@@ -153,9 +153,10 @@
               </li>
               <div style="border-left: 1.5px solid #252525; padding-top: 40px;"></div>
               <li class="nav-item">
+                
                 <a id="popup-link" href="" tabindex="0" class="nav-link"  data-toggle="popover" data-trigger="focus" data-placement="bottom" title="Need to speak with us?" data-content="CLick Here!">Contact Us</a>
 
-                <div class="pop-up" id="closeablecard">
+                <!-- <div class="pop-up" id="closeablecard">
                   <button data-dismiss="alert" data-target="#closeablecard" type="button" class="close" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -170,7 +171,7 @@
                     <div class="col">
                       <h5>Need to speak with us ?</h5>
                       <p>Just contact us!</p>
-                    </div>
+                    </div> -->
 
                     
 
@@ -192,7 +193,30 @@
 
 <!-- notification start here -->
 
+<button class="popup-button rounded-circle" style="background: #08135c; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 3px 8px 0 rgba(0, 0, 0, 0.1);" onclick="openPopup()"><i class="fa-solid fa-question boxx" style="color: #fff; font-size: 1.5em; padding-top: 7px;"></i></button>
 
+  <div class="popup-container" id="popupContainer">
+      <div class="popup-content">
+          <span class="close-button warp-right" onclick="closePopup()">&times;</span>
+          <div class="row warp-left">
+
+                  <div class="box">
+                    <i class="fa-solid fa-headset" style="color: #3F58DD; font-size: 3em;"></i>
+                  </div>
+
+                  <div class="col">
+                    <h5>Need to speak with us ?</h5>
+                  </div>
+          </div>
+           <br>
+          <p><strong>call us here :</strong></p>
+          <p class="warp-left">PT. Ispat Indo :  <a href="">+62 1234 1234 123</a> <br> <br>
+
+            PT. Ispat Bukit baja : <a href="">+62 1234 1234 123</a> <br> <br>
+
+            PT. Ispat Wire Product :  <a href="">+62 1234 1234 123</a>
+      </div>
+  </div>
 
 
 <!-- notification end here -->
