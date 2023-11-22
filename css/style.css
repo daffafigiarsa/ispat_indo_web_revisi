@@ -3200,11 +3200,17 @@ input.check-toggle-round-flat:checked + label:after {
   bottom: 50px;
   right: 50px;
   padding: 10px;
-  color: #fff;
   border: none;
   cursor: pointer;
-  background: #08135c;
+  background: #24369d;
   z-index: 100;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+.popup-button i{
+  color: #fff; 
+  font-size: 1.5em; 
+  padding-top: 6px;
 }
 
 .popup-container {
@@ -3224,36 +3230,56 @@ input.check-toggle-round-flat:checked + label:after {
   position: fixed;
   bottom: 100px;
   right: 100px;
-  background-color: #fff;
+  background-color: #24369d;
   padding: 20px;
   border-radius: 5px;
   text-align: left;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 8px 0 rgba(0, 0, 0, 0.3);
 }
+.popup-content .detail-box{
+  padding: 10px;
+  background: #fff;
+  border-radius: 2px;
+}
+
 .popup-content h5{
   font-size: 24px;
-  color: #3F58DD;
+  color: #fff;
   font-weight: 600;
 }
 .popup-content p{
-  font-size: 18px;
+  font-size: 16px;
   color: #252525;
-
 }
 .popup-content a{
   color: #3F58DD;
-  border-bottom: 1px solid #3F58DD;
+  border-bottom: 2px solid #3F58DD;
+  font-weight: 510;
 }
 .popup-content a:hover{
-  border-bottom: 0px solid #3F58DD;
+  color: #252525;
+  border-bottom: 2px solid #252525;
+}
+
+.popup-content .box{
+  width: 3.5em;
+  height: 3.5em;
+  padding: 7px;
+  border-radius: 1.5px;
+  background-color: #24369d;
+  margin-bottom: 15px;
 }
 
 .close-button {
-  color: #aaa;
+  color: #f9f9f9;
   float: right;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
+  opacity: 0.7;
+}
+.close-button :hover{
+  opacity: 1;
 }
 
 .boxx {
