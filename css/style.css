@@ -1233,15 +1233,16 @@ input.check-toggle-round-flat:checked + label:after {
     display: -ms-flexbox;
     display: flex;
     margin-left: auto;
+    margin-right: 20px;
+    height: 46px;
+    width: 176.24px;
   }
   
   .job_section .box .option-box .fav-btn {
-    margin-right: 25px;
     border: none;
     background: none;
     outline: none;
     font-size: 20px;
-    color: inherit;
   }
   
   .job_section .box .option-box .apply-btn {
@@ -1249,7 +1250,7 @@ input.check-toggle-round-flat:checked + label:after {
     padding: 10px 45px;
     background-color: #3F58DD;
     color: #ffffff;
-    border-radius: 5px;
+    border-radius: 3px;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     -moz-transition: all .3s;
@@ -1263,7 +1264,63 @@ input.check-toggle-round-flat:checked + label:after {
     color: #3F58DD;
     border: 1px solid #3F58DD;
   }
-  
+
+  .job_section .box .availabe-box {
+    padding: 5px;
+    border-radius: 35px;
+    color: #155724;
+    background-color: #d4edda;
+    width: 160px;
+  }
+  .job_section .box .availabe-box i{
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 1.2em;
+    border-radius: 2px;
+    color: #155724;
+    background-color: transparent;
+    margin-right: 15px;
+  }
+  .job_section .box .availabe-box h6{
+    padding-top: 10px;
+    font-size: 1em;
+    color: #155724;
+  }
+.alert-availabe {
+  border-top: 10px solid transparent; 
+  position: relative; 
+  top: 35px; 
+  border-radius: 5px 5px 0 0;
+}
+
+.job_section .box .unavailabe-box {
+  padding: 5px;
+  border-radius: 35px;
+  color: #721c24;
+  background-color: #f8d7da;
+  width: 175px;
+}
+.job_section .box .unavailabe-box i{
+  padding-left: 15px;
+  padding-top: 10px;
+  font-size: 1.2em;
+  border-radius: 2px;
+  color: #721c24;
+  background-color: transparent;
+  margin-right: 15px;
+}
+.job_section .box .unavailabe-box h6{
+  padding-top: 10px;
+  font-size: 1em;
+  color: #721c24;
+}
+.alert-unavailabe {
+  border-top: 10px solid #ea6c76; 
+  position: relative; 
+  top: 35px; 
+  border-radius: 5px 5px 0 0;
+}
+
   .job_section .btn-box {
     display: -webkit-box;
     display: -moz-box;
@@ -2501,11 +2558,11 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 .contact_detail {
-  height: 153vh;
+  height: 100vh;
   background-color: #3F58DD;
   padding: 0px 30px;
   border-radius: 10px 0 0 10px;
-  height: 1200px;
+  height: 1100px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 8px 0 rgba(0, 0, 0, 0.1);
 }
 @media screen and (max-width: 900px) {
@@ -2974,7 +3031,7 @@ input.check-toggle-round-flat:checked + label:after {
 }
 
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form a {
   background-color: #3F58DD;
   color: #fff;
   border: 0;
@@ -2987,7 +3044,7 @@ input.check-toggle-round-flat:checked + label:after {
   bottom: 75px; */
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form a:hover {
   color: #3F58DD;
   background-color: transparent;
 }
@@ -3207,6 +3264,20 @@ input.check-toggle-round-flat:checked + label:after {
   border-radius: 50%;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
+@media only screen and (max-width: 767px) {
+  .popup-button {
+    position: fixed;
+    bottom: 50px;
+    right: 25px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background: #24369d;
+    z-index: 100;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+}
 .popup-button i{
   color: #fff; 
   font-size: 1.5em; 
@@ -3223,20 +3294,35 @@ input.check-toggle-round-flat:checked + label:after {
   /* background-color: rgba(0, 0, 0, 0.3); */
   align-items: center;
   justify-content: center;
-  z-index: 100;
+  z-index: 1000;
 }
-
-.popup-content {
+@media only screen and (min-width:768px) {
+  .popup-content {
   width: 300px;
   height: 445px;
   position: fixed;
   bottom: 120px;
-  right: 100px;
+  right: 75px;
   background: #24369d;
   padding: 10px;
   border-radius: 15px;
   text-align: left;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 8px 0 rgba(0, 0, 0, 0.3);
+  }
+}
+@media only screen and (max-width:767px) {
+  .popup-content {
+  width: 300px;
+  height: 445px;
+  position: fixed;
+  bottom: 120px;
+  right: 25px;
+  background: #24369d;
+  padding: 10px;
+  border-radius:  15px;
+  text-align: left;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 8px 0 rgba(0, 0, 0, 0.3);
+  }
 }
 
 .popup-content .box{
